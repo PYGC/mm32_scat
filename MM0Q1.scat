@@ -63,12 +63,12 @@ LOAD_REGION __RO_BASE __RO_SIZE  {                          /* load region size_
         *.o (vector_table, +FIRST)
     }
 
-    CODE +0 __RO_SIZE - ImageLength(VECTORS) {                             /* load address = execution address */
+    CODE +0 __RO_SIZE - ImageLength(VECTORS) {              /* load address = execution address */
         * (InRoot$$Sections)
         * (+RO)
     }
 
-    DATA __RW_BASE __RW_SIZE  {                            /* RW data */
+    DATA __RW_BASE __RW_SIZE  {                             /* RW data */
         * (+RW, +ZI)
     }
 
