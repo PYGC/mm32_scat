@@ -60,7 +60,7 @@
 LOAD_REGION __RO_BASE __RO_SIZE  {                          /* load region size_region */
 
     VECTORS __RO_BASE __VECTOR_MAX_SIZE{
-        *.o (.vector_table, +FIRST)
+        *.o (RESET, +FIRST)
     }
 
     CODE +0 __RO_SIZE - ImageLength(VECTORS) {              /* load address = execution address */
