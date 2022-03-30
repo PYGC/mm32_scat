@@ -1,4 +1,4 @@
-#! armcc -E
+#!armcc -E
 ; command above MUST be in first line (no comment above!)
 
 /*
@@ -12,7 +12,7 @@
 ; </h>
  *----------------------------------------------------------------------------*/
 #define __ROM_BASE          0x08000000
-#define __ROM_SIZE          0x40000
+#define __ROM_SIZE          0x8000
 
 /*--------------------- Embedded RAM Configuration ---------------------------
 ; <h> RAM Configuration
@@ -21,7 +21,7 @@
 ; </h>
  *----------------------------------------------------------------------------*/
 #define __RAM_BASE          0x20000000
-#define __RAM_SIZE          0x10000
+#define __RAM_SIZE          0x1000
 
 /*--------------------- Stack / Heap Configuration ---------------------------
 ; <h> Stack / Heap Configuration
@@ -36,7 +36,7 @@
 /*----------------------------------------------------------------------------
  Vector Table
  *----------------------------------------------------------------------------*/
-#define __VECTOR_MAX_SIZE   0x400
+#define __VECTOR_MAX_SIZE   0xC4
 
 /*----------------------------------------------------------------------------
   User Stack & Heap boundery definition

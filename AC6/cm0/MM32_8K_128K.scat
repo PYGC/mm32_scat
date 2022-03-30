@@ -1,4 +1,4 @@
-#! armcc -E
+#!armclang -E --target=arm-arm-none-eabi -mcpu=cortex-m0 -xc
 ; command above MUST be in first line (no comment above!)
 
 /*
@@ -12,7 +12,7 @@
 ; </h>
  *----------------------------------------------------------------------------*/
 #define __ROM_BASE          0x08000000
-#define __ROM_SIZE          0x10000
+#define __ROM_SIZE          0x20000
 
 /*--------------------- Embedded RAM Configuration ---------------------------
 ; <h> RAM Configuration
