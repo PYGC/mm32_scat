@@ -1,4 +1,4 @@
-# MM32_SCAT
+# MM32_SCT
 
 MM32 Scatter Files for Keil µVision at Link Phase (for armlink).
 
